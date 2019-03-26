@@ -1,9 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Poppins:500|Open+Sans');
-@import "~bootstrap/scss/bootstrap";
-
-body, html {
-  height: 100%;
-  background-color: rgba(0,0,0,.018);
+ @import "~bootstrap/scss/bootstrap";
+ body, html {
+     height: 100%;
+     background-color: rgba(0,0,0,.018);
+     color: rgba(0,0,0,.75);
+     font-family: 'Nunito';
+}
+ body {
+     background-color: #FFCC00;
+     padding: 20px;
+     margin: 0;
+}
+ h1, h2, p, ul, li {
   color: rgba(0,0,0,.75);
   font-family: 'Nunito';
+}
+ ul.header li {
+     display: inline;
+     list-style-type: none;
+     margin: 0;
+}
+ ul.header {
+     background-color: #111;
+     padding: 0;
+}
+ ul.header li a {
+     color: #FFF;
+     font-weight: bold;
+     text-decoration: none;
+     padding: 20px;
+     display: inline-block;
+}
+ .content {
+     background-color: #FFF;
+     padding: 20px;
+}
+ .content h2 {
+     padding: 0;
+     margin: 0;
+}
+ .content li {
+     margin-bottom: 10px;
 }

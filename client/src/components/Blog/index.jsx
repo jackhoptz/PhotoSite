@@ -36,6 +36,8 @@ class Home extends React.Component {
   render() {
     const { articles } = this.props;
 
+
+    //TODO:- this is the stuff (styling) I'm currently editing.
     return (
       <div>
           <div>
@@ -46,20 +48,20 @@ class Home extends React.Component {
           <div>
             {articles.map((article) => {
               return (
-                <div className="card my-3">
-                  <div className="card-header">
+                <div className="">
+                  <h3 className="">
                     {article.title}
-                  </div>
-                  <div className="card-body">
+                  </h3>
+                  <div className="">
                     {article.body}
-                    <p className="mt-5 text-muted"><b>{article.author}</b> {moment(new Date(article.createdAt)).fromNow()}</p>
+                    <p className=""><b>{article.author}</b> {moment(new Date(article.createdAt)).fromNow()}</p>
                   </div>
-                  <div className="card-footer">
-                    <div className="row">
-                      <button onClick={() => this.handleEdit(article)} className="btn btn-primary mx-3">
+                  <div className="">
+                    <div className="">
+                      <button onClick={() => this.handleEdit(article)} className="blog-button">
                         Edit
                       </button>
-                      <button onClick={() => this.handleDelete(article._id)} className="btn btn-danger">
+                      <button onClick={() => this.handleDelete(article._id)} className="blog-button">
                         Delete
                       </button>
                     </div>

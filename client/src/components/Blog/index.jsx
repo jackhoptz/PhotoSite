@@ -52,10 +52,8 @@ class Home extends React.Component {
                   <h3 className="">
                     {article.title}
                   </h3>
-                  <div className="">
-                    {article.body}
-                    <p className=""><b>{article.author}</b> {moment(new Date(article.createdAt)).fromNow()}</p>
-                  </div>
+                  <p>{article.body}</p>
+                  <p className=""><b>{article.author}</b> {moment(new Date(article.createdAt)).fromNow()}</p>
                   <div className="">
                     <div className="">
                       <button onClick={() => this.handleEdit(article)} className="blog-button">

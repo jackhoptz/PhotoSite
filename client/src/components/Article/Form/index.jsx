@@ -60,26 +60,26 @@ class Form extends React.Component {
     const { title, body, author } = this.state;
 
     return (
-      <div className="col-12 col-lg-6 offset-lg-3">
+      <div>
         <input
           onChange={(ev) => this.handleChangeField('title', ev)}
           value={title}
-          className="form-control my-3"
+          className="blog-form"
           placeholder="Article Title"
         />
         <textarea
           onChange={(ev) => this.handleChangeField('body', ev)}
-          className="form-control my-3"
+          className="blog-form"
           placeholder="Article Body"
           value={body}>
         </textarea>
         <input
           onChange={(ev) => this.handleChangeField('author', ev)}
           value={author}
-          className="form-control my-3"
+          className="blog-form"
           placeholder="Article Author"
         />
-        <button onClick={this.handleSubmit} className="btn btn-primary float-right">{articleToEdit ? 'Update' : 'Submit'}</button>
+        <button onClick={this.handleSubmit} className="blog-button">{articleToEdit ? 'Update' : 'Submit'}</button>
       </div>
     )
   }

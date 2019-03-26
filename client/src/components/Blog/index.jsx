@@ -37,15 +37,13 @@ class Home extends React.Component {
     const { articles } = this.props;
 
     return (
-      <div className="container">
-        <div className="row pt-5">
-          <div className="col-12 col-lg-6 offset-lg-3">
-            <h1 className="text-center">LightBlog</h1>
+      <div>
+          <div>
+            <h2>Blog</h2>
+            <Form />
           </div>
-          <Form />
-        </div>
-        <div className="row pt-5">
-          <div className="col-12 col-lg-6 offset-lg-3">
+          <div>
+          <div>
             {articles.map((article) => {
               return (
                 <div className="card my-3">
@@ -69,8 +67,8 @@ class Home extends React.Component {
                 </div>
               )
             })}
+            </div>
           </div>
-        </div>
       </div>
     );
   }

@@ -25,7 +25,7 @@ const App = (props) => {
         <div className="App">
           <HashRouter>
             <header>
-              <h1>Simple SPA</h1>
+              <h1>Jack's Super Good Photo Blog</h1>
               <ul className="header">
                 <li><NavLink exact to="/">Home</NavLink></li>
                 <li><NavLink to="/stuff">Stuff</NavLink></li>

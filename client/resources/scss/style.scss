@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Poppins:500|Open+Sans');
  @import "~bootstrap/scss/bootstrap";
- body, html {
-     height: 100%;
-     background-color: rgba(0,0,0,.018);
+ body {
+     height: auto;
      color: rgba(0,0,0,.75);
      font-family: 'Nunito';
-}
- body {
      background-color: rgb(181, 238, 255);
      padding: 20px;
      margin: 0;
@@ -34,6 +31,7 @@
  .content {
      background-color: #FFF;
      padding: 20px;
+     min-height: 80vh;
 }
  .content h2 {
      padding: 0;
